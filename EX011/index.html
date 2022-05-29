@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplismente
+     aumente e diminua o tamanho do seu navegador.</p>
+     <picture>
+         <source media="(max-width:750px )" srcset="IMAGENS/foto-p.png" type="image/png">
+         <source media="(max-width:1050px)" srcset="IMAGENS/derick-m.png" type="image/png">
+         <img src="IMAGENS/derick-g.png" alt="imagem flexivel">
+     </picture>
+    <h1> Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio src="midia/sombrio.mp3" controls ></audio>
+    <audio src="midia/É com ela que eu estou   Cristiano Araújo Letra 2014.mp3 " controls autoplay></audio>
+    <audio preload="metadata" controls>
+<source src="midia/alegre.mp3" type="audio/mpeg"></audio>
+<p>Infelizmente seu navegador não consegue reproduiz audios, <a href="midia/É com ela que eu estou   Cristiano Araújo Letra 2014.mp3">
+    clique aqui para downloads</a>.</p>
+</body>
+</html>
