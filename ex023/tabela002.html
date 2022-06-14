@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas grandes</title>
     <style>
-        body{
+        caption{
+            padding: 10px;
+            font-weight: bolder;
+            background-color: rgba(161, 2, 2, 0.439);
+        }
+        tbody{
             font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.453);
         }
         table{
             width: 500px;
             border-collapse: collapse;
+            position:relative ;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: rgba(58, 58, 58, 0.996);
         }
         thead, tfoot{
             background-color: rgba(58, 58, 58, 0.996);
@@ -23,10 +38,12 @@
     </style>
 </head>
 <body>
+    <h1>Uso das tabelas grandes</h1>
     <table>
+        <caption>POPULAÇÃO FEDERATIVA</caption>
        <thead>
-           <th>Estado</th>
-           <th>População</th>
+           <th scope="col">Estado</th>
+           <th scope="col" style="width:100px ;">População</th>
        </thead>
        <tbody>
            <tr>
@@ -142,7 +159,7 @@
 
        </tbody>
        <tfoot>
-           <th>População Total</th>
+           <th scope="row">População Total</th>
            <td>213 317 639</td>
 
        </tfoot>
