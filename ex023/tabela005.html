@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícoios de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.nome{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="idade">
+            <col class="sexo">
+            <col class="prof">
+        
+        </colgroup>
+        <caption>Cadrasto</caption>
+        <tr>
+            <th scope="col">Profissão</th>
+            <th scope="col">Idade</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>25</td>
+            <td>F</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Murilo</td>
+            <td>27</td>
+            <td>M</td>
+            <td>eletrotécnico</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>38</td>
+            <td>F</td>
+            <td>Gerente adjunta</td>
+        </tr>
+        <tr>
+            <td>Gabriela</td>
+            <td>22</td>
+            <td>F</td>
+            <td>Programadora</td>
+        </tr>
+        
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1,3em;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        tr,th, td{
+            border:1px solid red;
+            padding: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption>
+         Filmes favoritos 
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Gabriela</td>
+                <td>Suits</td>
+                <td>Dyeni a virgem</td>
+                <td>Ponto cego</td>
+            </tr>
+            <tr>
+                <td>Paula</td>
+                <td>Chuck</td>
+                <td>Suits</td>
+                <td>Gray's anatomia</td>
+            </tr>
+            <tr>
+                <td>Adrielly</td>
+                <td>Irmãos a obra</td>
+                <td>Bem vindo a Edem</td>
+                <td>La casa de papel</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Murilo</td>
+                <td>chuck</td>
+                <td>Smaville</td>
+                <td>Supernatural</td>
+            </tr>
+            <tr>
+                <td>Maik</td>
+                <td>Dragonball</td>
+                <td>harry potter</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Jocimar</td>
+                <td>Riversidade</td>
+                <td>The boys</td>
+                <td>Crepusculo</td>
+            </tr>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+</body>
+</html>

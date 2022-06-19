@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+    <style>
+        table{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-collapse: collapse;
+
+        }
+        thead{ background-color: gray;
+            color: white;
+            font-size: 1.4em;
+
+        }
+        tr,th,td{
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+        th.media{
+            text-align: left;
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.2em;
+
+        }
+        td.median{
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.2em;
+
+        }
+        tfoot{
+            font-weight: bolder;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Àrea</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th  rowspan="2" scope="col">Média</th>
+             
+            </tr>
+            <tr>
+                <th scope="col">Notas 1</th>
+                <th scope="col">Notas 2</th>
+                
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>9.00</td>
+                <td>8.00</td>
+                <td>8.50</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>8.00</td>
+                <td>8.00</td>
+                <td>8.00</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>7.00</td>
+                <td>9.00</td>
+                <td>8.00</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>5.00</td>
+                <td>7.00</td>
+                <td>6.00</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="media">Média de Exatas</th>
+                <td class="median">7.625</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="row">Humanas</th>
+                <td>História</td>
+                <td>7.00</td>
+                <td>7.50</td>
+                <td>7.25</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>8.00</td>
+                <td>8.00</td>
+                <td>8.00</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row" class="media">Média de Humanas</th>
+                <td class="median">7.625</td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
